@@ -4,42 +4,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.claudir.agendatarefas.activity.LoginActivity">
+    tools:context="com.example.claudir.agendatarefas.activity.CadastroUsarioActivity">
 
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_gravity="center"
-        android:src="@drawable/agenda"/>
+        android:src="@drawable/agenda"
+        android:layout_gravity="center"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Usuário"
-        android:id="@+id/usuario"
-        />
+        android:id="@+id/novoUsuario"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
         android:hint="Senha"
-        android:id="@+id/senha"
-       />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Entrar"
-        android:onClick="login"
-        />
+        android:inputType="textPassword"
+        android:id="@+id/novaSenha"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cadastre-se"
-        android:onClick="cadastrarUsuario"/>
-
+        android:text="Cadastrar"
+        android:onClick="cadastrar"/>
 
 </LinearLayout>
