@@ -18,6 +18,11 @@ public class Usuarios {
     @ColumnInfo(name = "senha")
     private String senha;
 
+    public Usuarios(String usuario, String senha){
+        this.usuario = usuario;
+        this.senha = senha;
+    }
+
     public int getId() {
         return id;
     }
